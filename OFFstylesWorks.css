@@ -1,0 +1,200 @@
+
+
+@media (max-width: 600px) {
+
+
+
+body {
+   background: #F8F0E6;
+  overflow: auto;
+  border: #CFB077 2px solid;
+    padding-top: 0.5rem; /* tai mitä nyt haluatkaan */
+
+}
+
+#maalaukset {
+  max-width: 1000px;
+
+  padding: 0rem;
+  background: #cfb28e;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-height: 65vh;
+  overflow-y: auto;
+  border: #CFB077 2px solid;
+  border-width: 10%;
+    padding-top: 0rem; /* tai mitä nyt haluatkaan */
+    width: 80%;
+  align-content: center;
+  margin: 1rem auto;
+  display: block;
+}
+
+.gallery {
+  gap: 0.3rem;
+  
+}
+
+
+/* Alustetaan kaksi saraketta */
+.gallery .column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+
+.gallery img {
+  width: 85%;
+  height: auto;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+}
+
+.gallery p {
+  font-size: 13px;
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  color: #0e0d0d;
+  text-align: left;
+  margin-left: 2rem;
+}
+
+.gallery ul {
+  text-align: left;
+  font-size: 13px;
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  color: #0e0d0d;
+  margin-top: -1rem;
+  margin-left: 0rem;
+}
+
+#cv {
+  max-width: 1000px;
+  padding: 0rem;
+  background: #F8F0E6;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-height: 100vh;
+  overflow-y: auto;
+  border: #CFB077 2px solid;
+  border-width: 10%;
+    padding-top: 0rem; /* tai mitä nyt haluatkaan */
+    width: 80%;
+  align-content: center;
+  margin: 1rem auto;
+  display: block;
+
+}
+
+
+.cv footer {
+  background-color: #c2bab2;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 0rem;
+  
+}
+}
+
+.logo {
+width: 15%;
+margin-top: 1rem;
+display: block;
+}
+
+.language-switch-container {
+  display: flex;
+  gap: 0.2rem;
+  justify-content: flex-end; 
+  margin-top: -2.5rem;
+  margin-right: 1rem;
+}
+
+
+
+.language-switch-container a {
+  font-family: Inter;
+  color: #CEADAD;
+  text-decoration: none;
+  font-size: 0.65rem;
+  margin-top: auto;
+}
+
+.language-switch-container a:hover {
+  text-decoration: underline;
+  color: #a08787;
+  text-decoration-color: #a08787;          /* viivan väri */
+  text-decoration-style: solid;           /* solid, dotted, dashed, wavy, double */
+  text-decoration-thickness: 2px;          /* viivan paksuus */
+  text-underline-offset: 2px;  
+}
+
+
+
+h1 {
+color: #a35e36;
+font-family: Inter;
+font-size: 1.4rem;
+font-style: normal;
+font-weight: 900;
+letter-spacing: 0.8rem;
+text-align: center;
+margin-top: 2rem;
+}
+.korostus {
+  color: #D97D47;
+}
+
+img {
+  width: 80%;
+  align-content: center;
+  margin: 1rem auto;
+  display: block;
+}
+
+nav {
+  display: flex;
+  gap: 2rem; /* väli linkkien väliin */
+  justify-content: center; /* keskitys koko navissa */
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+nav a {
+  color: #963700;
+  font-size: 0.9rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 1000;
+  text-decoration: none;
+}
+
+
+nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: #D97D47;          /* viivan väri */
+  text-decoration-style: solid;           /* solid, dotted, dashed, wavy, double */
+  text-decoration-thickness: 2px;          /* viivan paksuus */
+  text-underline-offset: 8px;  
+}
+
+
+
+
+footer {
+  background-color: #c2bab2;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 0rem;
+  
+}
+
+footer p {
+  font-family: "Inter", sans-serif;
+  font-size: 0.7rem;
+  text-align: center;
+  color:#EBE2D9;
+  margin-top: 1rem;
+}
+

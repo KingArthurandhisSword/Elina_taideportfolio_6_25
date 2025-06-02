@@ -1,0 +1,173 @@
+
+@media (max-width: 600px) {
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+}
+.page-wrapper nav {
+  margin-top: auto;
+}
+
+body {
+  background: #F8F0E6;
+  overflow: auto;
+}
+
+.landing {
+  background: #F8F0E6;
+
+}
+
+.logo {
+width: 15%;
+text-align: left;
+display: block;
+}
+
+.language-switch-container {
+  display: flex;
+  gap: 0.2rem;
+  justify-content: flex-end; /* jos haluat oikeaan reunaan */
+  margin-top: -3.5rem;
+  margin-right: 4rem;
+}
+
+.language-switch-container a {
+  font-family: Inter;
+  color: #CEADAD;
+  text-decoration: none;
+  font-size: 1rem;
+  
+}
+
+.language-switch-container a:hover {
+  text-decoration: underline;
+  color: #a08787;
+  text-decoration-color: #a08787;          /* viivan väri */
+  text-decoration-style: solid;           /* solid, dotted, dashed, wavy, double */
+  text-decoration-thickness: 2px;          /* viivan paksuus */
+  text-underline-offset: 2px;  
+}
+
+
+h1 {
+color: #a35e36;
+font-family: Inter;
+font-size: 1.4rem;
+font-style: normal;
+font-weight: 900;
+letter-spacing: 0.8rem;
+text-align: center;
+margin-top: 2rem;
+margin-bottom: 3rem;
+}
+
+.korostus {
+  color: #D97D47;
+}
+
+img {
+  width: 80%;
+  align-content: center;
+  margin: 1rem auto;
+  display: flex;
+}
+
+nav {
+  display: flex;
+  gap: 2rem; /* väli linkkien väliin */
+  justify-content: center; /* keskitys koko navissa */
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+  
+}
+
+nav a {
+  color: #963700;
+  font-size: 0.9rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 1000;
+  text-decoration: none;
+  margin-top: 4rem;
+}
+
+
+nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: #D97D47;          /* viivan väri */
+  text-decoration-style: solid;           /* solid, dotted, dashed, wavy, double */
+  text-decoration-thickness: 2px;          /* viivan paksuus */
+  text-underline-offset: 8px;  
+}
+
+.arrow {
+  width: 4%;
+  margin-top: 3rem
+}
+
+#bio {
+  margin: 0;
+  border: #CFB077 2px solid;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  font-family: "Inter", sans-serif;
+  color: #40291B;
+  line-height: 1.6;
+  text-align: start;
+  background: #F8F0E6;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#bio p {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem; /* väli kappaleiden väliin */
+   font-family: "Inter", sans-serif;
+   margin-left: 1rem;
+   opacity: 88%;
+}
+
+#bio .signature {
+  font-weight: bold;
+  margin-top: 3rem;
+}
+
+#bio .caption {
+  font-weight: normal;
+  font-size: 0.6rem;
+  color: #a09c9c;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+#bio .arrowup {
+  width: 4%;
+  display: block;
+  transform: rotate(180deg);
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: -2.3rem;
+  
+}
+
+footer {
+  background-color: #c2bab2;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0.5rem;
+  position: static;
+}
+
+footer p {
+  font-family: "Inter", sans-serif;
+  font-size: 0.7rem;
+  text-align: center;
+  margin-top: 1rem;
+  color:#EBE2D9;
+  
+}
+
+}
