@@ -373,7 +373,9 @@ textarea {
     text-decoration-style: solid;
     text-decoration-thickness: 8px;
     text-underline-offset: 8px;
-  }  footer {
+  }  
+  
+  footer {
     background-color: #c2bab2;
     width: 100%;
     margin: 0;
@@ -435,18 +437,111 @@ textarea {
 }
 
 @media (min-width: 1425px) {
+   body {
+    background: #F8F0E6;
+    overflow: auto;
+    border: #CFB077 4px solid;
+    padding-top: 2rem;
+    width: 100vw;
+    height: 100vh;
+    margin: 1;
+  }
+  header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #F8F0E6;
+  box-sizing: border-box;
+  }
+
+  h1 {
+font-family: Inter, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #a35e36;
+  letter-spacing: 0.8rem;
+  margin: 0;
+  padding-right: 70px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
+
+    .korostus {
+    color: #D97D47;
+  }
+
+  img {
+    width: 155%;
+    height: auto;
+    display: block;
+    margin-left: -10px;
+  }
+  .korostus {
+    color: #D97D47;
+  }
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.logo {
+  width: 20%;
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin-left: -0.5rem;
+}
+
+.logo img {
+  max-width: 80px;
+  height: auto;
+}
+
+  .language-switch-container {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+    gap: 1.2rem;
+    padding-right: 3.7rem;
+  }
+  .language-switch-container a {
+    font-family: 'Inter', sans-serif;
+    color: #CEADAD;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+    text-align: left;
+  }
+  .language-switch-container a:hover,
+  .language-switch-container a:focus {
+    color: #a08787;
+    text-decoration: underline;
+  }
+
+      #sisalto {
+    max-width: 1500px;
+    max-height: 65vh;
+    padding: 2rem;
+    margin: 8rem auto 0 auto;
+    background: transparent;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow-y: auto;
+    border: #CFB077 2px solid;
+    }
+
   nav {
     display: flex;
     gap: 14rem;
+    padding-top: 62px;
     justify-content: center;
-    margin-bottom: auto;
-    margin-top: 6rem;
-    position: fixed;
-    bottom: 6rem;
-    left: 0;
-    right: 0;
-    background-color: transparent;
-    z-index: 1000;
+    padding-right: 0px;
   }
   
   nav a {
@@ -463,6 +558,78 @@ textarea {
     text-decoration-style: solid;
     text-decoration-thickness: 2px;
     text-underline-offset: 8px;
+  }
+
+  p {
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 23px;
+    margin-top: 7rem;
+  }
+
+  form {
+    max-width: 56%;
+
+  }
+
+  .somet {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    margin-top: -2rem;
+  }
+
+  .social-icon {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+  }
+  .someblokkari {
+    margin-top: 6rem;
+    align-items: center;
+
+  }
+
+.someblokkari .social-icon {
+    max-width: 5rem;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+    margin-bottom: -2rem;
+  }
+
+  .feedback-input {
+    font-size: 23px;
+    padding-top: 20px;
+    margin-bottom: 55px;
+    background-color: white;
+  }
+
+  textarea {
+    height: 15rem;
+  }
+
+  [type="submit"] {
+    font-size: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+    footer {
+    background-color: #c2bab2;
+    padding: 0.7rem 0;
+    margin: auto;
+    position: fixed;
+    bottom: 4px;  /* Account for body border */
+    left: 4px;  /* Account for body border */
+    min-width: 100%;
+  }
+
+  footer p {
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #EBE2D9;
+    margin: 0;
   }
 }
 </style>
