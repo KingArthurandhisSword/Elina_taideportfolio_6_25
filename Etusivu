@@ -189,7 +189,7 @@ footer p {
   color:#EBE2D9;
   margin-top: 1rem;
 }
-}
+
 
 /* Tablet (601px–1424px) */
 @media (min-width: 601px) and (max-width: 1424px) {
@@ -511,6 +511,7 @@ h1 {
     margin: 0;  /* Remove top margin since we have padding on the footer */
   }
 }
+}
 </style>
 </head>
 
@@ -520,7 +521,7 @@ h1 {
 
 <header>
   <div class="top-row">
-    <a href="/index.html" class="logo">
+    <a href="/elinamelginart/Etusivu" class="logo">
       <img src="assets/Grafiikat/Logo_red.svg" alt="Logo_red" />
     </a>
      <h1><span class="korostus">ELINA</span> MELGIN</h1>
