@@ -110,6 +110,7 @@
         </p>
     </div>
 
+
     <div class="gallery-item">
         <!-- Japanese impression 2 -->
         <img src="assets/Maalaukset/Japanese_impression_2_2023.png" alt="">
@@ -369,6 +370,9 @@
     </div>
 
   </div>
+  <button id="loadMore" style="margin:1rem auto; display:block;">
+  Lataa lisää
+</button>
 </section>
 
   <nav>
@@ -486,6 +490,31 @@ h1 {
   margin: 1rem auto;
   display: block;
 }
+
+  #maalaukset .gallery-item {
+    display: none;
+  }
+  #maalaukset .gallery-item:nth-child(-n+6) {
+    display: block;
+  }
+
+  #maalaukset .gallery {
+    position: static !important;
+    height: auto !important;
+    overflow: visible !important;
+    display: block !important;
+  }
+
+  /* 2) Pakota jokainen item normaaliksi blockiksi */
+  #maalaukset .gallery-item {
+    position: static    !important;
+    top: auto           !important;
+    left: auto          !important;
+    transform: none     !important;
+    margin-bottom: 1rem !important; /* Ruuvaa väliä allekkain */
+    width: auto         !important;
+    display: block      !important;
+  }
 
 .gallery {
   gap: 0.3rem;
@@ -917,8 +946,41 @@ h1 {
   });
 });
 
+(function(){
+  // 1) Varmistetaan, että mobiilin container venyy ja näyttää kaikki lohkot
+  const gallery = document.querySelector('#maalaukset .gallery');
+  gallery.style.height   = 'auto';
+  gallery.style.overflow = 'visible';
+
+  // 2) Load more -logiikka
+  const btn        = document.getElementById('loadMore');
+  const items      = document.querySelectorAll('#maalaukset .gallery-item');
+  let shownCount   = 6;  // näytetään aluksi 6
+  const inc        = 6;  // montako lisätään per klikkaus
+
+  btn.addEventListener('click', () => {
+    for (let i = shownCount; i < shownCount + inc && i < items.length; i++) {
+      const item = items[i];
+      // 3) Pakotetaan item normaaliksi block-elementiksi, rivittyy allekkain
+      item.style.position = 'static';
+      item.style.top      = 'auto';
+      item.style.left     = 'auto';
+      item.style.display  = '';       // CSS:stä periytyvä display (block)
+
+      // 4) Lazy-loading kuvalle
+      const img = item.querySelector('img');
+      img.loading = 'lazy';
+      // jos haluat käyttää data-src-logiikkaa, ota kommentin alta:
+      // img.src = img.dataset.src;
+    }
+    shownCount += inc;
+    if (shownCount >= items.length) {
+      btn.style.display = 'none';
+    }
+  });
+})();
 
 </script>
 
-
+</body>
 </html>
