@@ -3,7 +3,8 @@
 <head >
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elinan Taideportfolio</title>
+  <meta name="description" content="Elina Melgin on suomalainen kuvataiteilija, joka työskentelee öljy-, akryyli- ja pigmenttiväreillä Helsingissä, Karjaalla ja Ranskassa. Tutustu maalauksiin ja näyttelyihin.">
+  <title>Elina Melgin Art</title>
   
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-...sha...==" crossorigin="anonymous">
@@ -39,6 +40,9 @@
 <section id="maalaukset">  
   <div class="gallery">
     <div class="gallery-item">
+
+
+
         <!-- Loytoretkelle -->
         <img src="assets/Maalaukset/Loytoretkelle_sold_2024.png" alt="">
         <p>
@@ -83,6 +87,24 @@
         </p>
     </div>
 
+
+
+
+
+
+<a href="toinen-sivu.html">＞</a>
+
+
+
+
+
+
+
+
+
+
+
+    
     <div class="gallery-item">
         <!-- Japanese impression 1 -->
         <img src="assets/Maalaukset/Japanese_impression_1_sold_2024.png" alt="">
@@ -370,9 +392,7 @@
     </div>
 
   </div>
-  <button id="loadMore" style="margin:1rem auto; display:block;">
-  Lataa lisää
-</button>
+
 </section>
 
   <nav>
@@ -490,6 +510,43 @@ h1 {
   margin: 1rem auto;
   display: block;
 }
+
+
+
+
+
+/*JÄIN TÄHÄN
+
+- TEE UUSI HTML TIEDOSTO MAALAUKSET SIVU 2, 3, YMS
+- VAIHDA LINKIN OSOITE TÄSSÄ TIEDOSTOSSA
+- VAIHDA > ESIM SANAAN SEURAAVA
+- LISÄÄ TOISELLE HTML SIVULLE TAAKSE JA ETEENPÄIN LINKIT JA LINKKI ENSIMMÄISELLE SIVULLE TEOKSIA-LINKISTÄ
+- JAOTTELE MAALAUKSET JÄRKEVIIN SETTEIHIN PER SIVU
+- TEE ENSIN SUOMENKIELINEN, TARKISTA ETTÄ TOIMII JA SITTEN VASTA ENGLANNINKIELINEN*/
+
+
+
+/* Valitaan juuri tämä linkki */
+#maalaukset a[href="toinen-sivu.html"] {
+  display: block;           /* Vie koko rivin levyisenä */
+  width: 100%;              /* Varmistaa täyden leveyden */
+  padding-right: 2rem;            /* Ylä- ja alareunaan tilaa */
+  text-align: right;       /* Keskittää sisällön */
+  font-size: 1.5rem;        /* Suurempi merkki */
+  color: #963700;           /* Haluamasi väri */
+  text-decoration: none;    /* Poistaa alleviivauksen */
+}
+#maalaukset a[href="toinen-sivu.html"]:hover {
+  text-decoration: darkgreen;
+}
+
+
+
+
+
+
+
+
 
   #maalaukset .gallery-item {
     display: none;
@@ -681,7 +738,9 @@ footer p {
     margin: 2rem auto;
     display: block;
   }
-
+#maalaukset a[href="toinen-sivu.html"] {
+ visibility: hidden;
+}
 
 #maalaukset img {
   width: 90%;
@@ -835,6 +894,10 @@ h1 {
     border: #CFB077 2px solid;
     
   }
+
+  #maalaukset a[href="toinen-sivu.html"] {
+ visibility: hidden;
+}
 
 .gallery {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
